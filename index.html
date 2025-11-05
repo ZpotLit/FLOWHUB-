@@ -2851,8 +2851,6 @@
     Accept
   </button>
 </div>
-
-<!-- ===================== FOOTER ===================== -->
 <footer id="footer" style="display:none; background-color:#1e90ff; color:white; text-align:center; padding:15px 10px; font-size:0.9em;">
   <p>© 2025 ZpotLit. All rights reserved.</p>
   <p>
@@ -2861,16 +2859,12 @@
     <a href="#" style="color:#ffd700; text-decoration:none; margin:0 5px;">Cookies Policy</a>
   </p>
 </footer>
-
-<!-- ===================== COOKIES SCRIPT ===================== -->
 <script>
 function acceptCookies() {
   document.getElementById('cookieBar').style.display = 'none';
   document.getElementById('footer').style.display = 'block';
   localStorage.setItem('cookiesAccepted', 'true');
 }
-
-// Auto-hide cookies bar if already accepted
 if (localStorage.getItem('cookiesAccepted')) {
   document.getElementById('cookieBar').style.display = 'none';
   document.getElementById('footer').style.display = 'block';
